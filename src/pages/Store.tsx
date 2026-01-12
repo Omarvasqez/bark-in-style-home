@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sparkles, Heart, Shield, Clock, Star, CheckCircle, Dog, Scissors } from "lucide-react";
+import { Sparkles, Heart, Shield, Clock, Star, CheckCircle, Dog, Scissors, Bone, ShowerHead, Cookie, Package } from "lucide-react";
 import product1 from "@/assets/product-1.jpg";
 import product2 from "@/assets/product-2.jpg";
 import product3 from "@/assets/product-3.jpg";
@@ -73,6 +73,33 @@ const Store = () => {
             Una selección curada de lo mejor para tu mascota. 
             Todo lo que vendemos, lo usamos primero en nuestros servicios.
           </p>
+        </div>
+      </section>
+
+      {/* Categories Section */}
+      <section className="py-8 md:py-12">
+        <div className="container-narrow mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            {[
+              { name: "Higiene", icon: ShowerHead, description: "Shampoos y cuidado" },
+              { name: "Accesorios", icon: Bone, description: "Collares y correas" },
+              { name: "Snacks", icon: Cookie, description: "Premios saludables" },
+              { name: "Kits", icon: Package, description: "Packs especiales" },
+            ].map((category, index) => (
+              <Card 
+                key={index}
+                className="group cursor-pointer border-0 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-elevated)] transition-all duration-300 hover:-translate-y-1"
+              >
+                <CardContent className="p-4 md:p-5 text-center">
+                  <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <category.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground text-sm md:text-base">{category.name}</h3>
+                  <p className="text-xs text-muted-foreground mt-1">{category.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
