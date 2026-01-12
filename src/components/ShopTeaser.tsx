@@ -77,7 +77,7 @@ const ShopTeaser = () => {
         {/* CTA */}
         <div className="text-center">
           <Button variant="outline" size="lg" asChild>
-            <a href="#" className="inline-flex items-center gap-2">
+            <a href="/tienda" className="inline-flex items-center gap-2">
               <ShoppingBag className="w-5 h-5" />
               Ver toda la tienda
             </a>
