@@ -7,9 +7,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Peluquería", href: "#servicios" },
-    { label: "Hotel & Guardería", href: "#servicios" },
-    { label: "Tienda", href: "#tienda" },
+    { label: "Peluquería", href: "/#servicios" },
+    { label: "Hotel & Guardería", href: "/#servicios" },
+    { label: "Tienda", href: "/tienda" },
   ];
 
   return (
