@@ -10,6 +10,7 @@ const Header = () => {
     { label: "Peluquería", href: "/#servicios" },
     { label: "Hospedaje", href: "/hospedaje" },
     { label: "Tienda", href: "/tienda" },
+    { label: "Nosotros", href: "/sobre-nosotros" },
   ];
 
   return (
