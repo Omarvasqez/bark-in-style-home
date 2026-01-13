@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Mail, MapPin, Phone } from "lucide-react";
+import { Instagram, Mail, MapPin, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -33,13 +33,16 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contacto</h3>
             <ul className="space-y-3 text-sm text-primary-foreground/70">
-              <li className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 flex-shrink-0" />
-                <span>Concón, Región de Valparaíso, Chile</span>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <span>Reñaca 90, Concón, Chile</span>
               </li>
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 flex-shrink-0" />
-                <span>+56 9 1234 5678</span>
+              <li className="flex items-start gap-2">
+                <Phone className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <div className="flex flex-col">
+                  <span>Lun - Vie: 10:00 a 19:00</span>
+                  <span>Sábados: 10:00 a 14:00</span>
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
@@ -48,11 +51,13 @@ const Footer = () => {
             </ul>
             {/* Social */}
             <div className="flex gap-4 mt-4">
-              <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <a 
+                href="https://instagram.com/barkinstyle.cl" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+              >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                <Facebook className="w-5 h-5" />
               </a>
             </div>
           </div>

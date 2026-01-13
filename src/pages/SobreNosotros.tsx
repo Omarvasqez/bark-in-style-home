@@ -209,7 +209,7 @@ const SobreNosotros = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Dirección</h4>
-                      <p className="text-muted-foreground">Av. Las Condes 12345, Las Condes, Santiago, Chile</p>
+                      <p className="text-muted-foreground">Reñaca 90, Concón, Chile</p>
                     </div>
                   </div>
                   
@@ -218,8 +218,8 @@ const SobreNosotros = () => {
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">Teléfono / WhatsApp</h4>
-                      <a href="tel:+56912345678" className="text-primary hover:underline">+56 9 1234 5678</a>
+                      <h4 className="font-semibold text-foreground mb-1">WhatsApp</h4>
+                      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Escríbenos por WhatsApp</a>
                     </div>
                   </div>
                   
@@ -239,9 +239,8 @@ const SobreNosotros = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Horarios de atención</h4>
-                      <p className="text-muted-foreground">Lunes a Viernes: 9:00 - 19:00</p>
+                      <p className="text-muted-foreground">Lunes a Viernes: 10:00 - 19:00</p>
                       <p className="text-muted-foreground">Sábados: 10:00 - 14:00</p>
-                      <p className="text-muted-foreground">Domingos: Cerrado</p>
                     </div>
                   </div>
                 </CardContent>
@@ -258,14 +257,14 @@ const SobreNosotros = () => {
             {/* Mapa */}
             <div className="h-[400px] lg:h-full min-h-[400px] rounded-xl overflow-hidden border border-border/50">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.9976752383396!2d-70.5769659!3d-33.4175147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf0a3f00c3c7%3A0x4b0b0b0b0b0b0b0b!2sAv.%20Las%20Condes%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1620000000000!5m2!1ses!2scl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.8!2d-71.5126!3d-32.9517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689ded5c3bd48d7%3A0x0!2sRe%C3%B1aca%2090%2C%20Conc%C3%B3n%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1620000000000!5m2!1ses!2scl"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación de Bark in Style"
+                title="Ubicación de Bark in Style en Concón"
               />
             </div>
           </div>
