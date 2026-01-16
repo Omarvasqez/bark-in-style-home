@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import CartIcon from "@/components/CartIcon";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
@@ -18,7 +19,7 @@ const Header = () => {
       <div className="container-narrow mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <img src={logo} alt="Bark in Style" className="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover" />
             <span className="font-bold text-lg text-foreground hidden sm:block">Bark in Style</span>
           </a>
@@ -36,8 +37,9 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* Cart & CTA */}
+          <div className="hidden md:flex items-center gap-4">
+            <CartIcon />
             <Button asChild>
               <a href="#reservar">Reservar</a>
             </Button>
