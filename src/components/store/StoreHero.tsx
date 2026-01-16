@@ -6,14 +6,14 @@ const StoreHero = () => {
       <div className="container-narrow mx-auto px-4 text-center">
         <div className="inline-flex items-center gap-2 bg-primary/10 text-primary font-medium text-sm px-4 py-2 rounded-full mb-6">
           <CheckCircle className="w-4 h-4" />
-          Probados por profesionales
+          Probados en nuestros servicios
         </div>
         <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4 leading-tight">
           Productos que usamos<br className="hidden md:block" /> y recomendamos
         </h1>
         <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-          Una selección curada de lo mejor para tu mascota. 
-          Todo lo que vendemos, lo usamos primero en nuestros servicios.
+          Todo lo que vendemos lo probamos primero. Si funciona para 
+          nuestros clientes peludos, lo compartimos contigo.
         </p>
       </div>
     </section>

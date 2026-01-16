@@ -9,8 +9,8 @@ const services = [
   {
     icon: Scissors,
     title: "Peluquería Canina",
-    description: "Corte, baño, limpieza de oídos y uñas. Tu mascota quedará impecable.",
-    benefit: "Resultados profesionales con productos premium",
+    description: "Baño, corte, limpieza de oídos y uñas. Trabajamos con calma para que tu perro esté cómodo.",
+    benefit: "Resultados naturales y perros relajados",
     image: groomingImg,
     cta: "Agendar",
     ctaLink: "#reservar",
@@ -19,8 +19,8 @@ const services = [
   {
     icon: Building,
     title: "Hotel para Mascotas",
-    description: "Cuidado 24/7 mientras viajas. Espacios amplios y supervisión constante.",
-    benefit: "Actualizaciones diarias con fotos y videos",
+    description: "Cuidado 24/7 mientras viajas. Espacio libre de jaulas y supervisión constante.",
+    benefit: "Fotos y videos diarios para tu tranquilidad",
     image: hotelImg,
     cta: "Ver más",
     ctaLink: "#hotel",
@@ -29,7 +29,7 @@ const services = [
   {
     icon: Users,
     title: "Guardería Canina",
-    description: "Socialización y juego supervisado durante el día. Ideal para perros activos.",
+    description: "Juego supervisado y socialización en grupos pequeños. Tu perro la pasa bien.",
     benefit: "Grupos reducidos según tamaño y temperamento",
     image: daycareImg,
     cta: "Ver más",
@@ -48,10 +48,10 @@ const ServicesSection = () => {
             Nuestros Servicios
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
-            Todo lo que tu mascota necesita
+            Cuidado real para tu perro
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Servicios profesionales de cuidado canino con el cariño y dedicación que tu mascota merece.
+            Servicios pensados para el bienestar de tu mascota. Sin estrés, con cariño y resultados naturales.
           </p>
         </div>
 

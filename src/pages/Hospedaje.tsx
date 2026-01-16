@@ -109,13 +109,13 @@ const Hospedaje = () => {
             </span>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Hospedaje y guardería con{" "}
-              <span className="text-primary">atención personalizada</span>
+              Hospedaje y guardería{" "}
+              <span className="text-primary">sin estrés</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Espacio libre de jaulas, supervisado las 24 horas y con mucho cariño. 
-              Tu perro se sentirá como en casa mientras tú no estás.
+              Un espacio tranquilo, sin jaulas y con supervisión constante. 
+              Tu perro descansa, juega y se siente como en casa.
             </p>
             
             <Button asChild variant="whatsapp" size="xl" className="w-full sm:w-auto">
@@ -179,11 +179,11 @@ const Hospedaje = () => {
               ¿Por qué elegirnos?
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Lo que nos hace diferentes
+              Un lugar tranquilo para tu perro
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              No somos una pensión tradicional. Somos un espacio donde cada perro recibe 
-              atención individual y mucho cariño.
+              No somos una pensión tradicional. Aquí cada perro recibe 
+              atención real, en un ambiente cálido y sin estrés.
             </p>
           </div>
           
@@ -277,11 +277,11 @@ const Hospedaje = () => {
       <section className="section-padding bg-primary">
         <div className="container-narrow mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-            ¿Listo para reservar?
+            ¿Quieres saber más?
           </h2>
           <p className="text-primary-foreground/90 max-w-2xl mx-auto mb-8 text-lg">
-            Escríbenos por WhatsApp para consultar disponibilidad. Los cupos son limitados 
-            y nuestros clientes frecuentes tienen prioridad.
+            Escríbenos por WhatsApp para consultar disponibilidad. Trabajamos con cupos 
+            limitados para dar atención real a cada perro.
           </p>
           <Button asChild size="xl" className="bg-background text-foreground hover:bg-background/90 w-full sm:w-auto">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">

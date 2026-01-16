@@ -15,23 +15,23 @@ const SobreNosotros = () => {
   const differentiators = [
     {
       icon: Heart,
-      title: "Trato personalizado",
-      description: "Cada perro recibe atención individual según su personalidad y necesidades específicas."
+      title: "Atención real",
+      description: "Cada perro recibe cuidado individual según su personalidad. Sin apuros, con cariño."
     },
     {
       icon: Shield,
-      title: "Supervisión constante",
-      description: "Vigilancia permanente para garantizar la seguridad y bienestar de tu mascota."
+      title: "Ambiente seguro",
+      description: "Supervisión constante en un espacio tranquilo donde tu perro se siente cómodo."
     },
     {
       icon: Users,
-      title: "Ambientes cálidos",
-      description: "Espacios libres de jaulas, diseñados para que tu perro se sienta como en casa."
+      title: "Sin jaulas",
+      description: "Espacios abiertos y cálidos donde los perros descansan y juegan libremente."
     },
     {
       icon: Star,
       title: "Clientes frecuentes",
-      description: "Prioridad en reservas y beneficios exclusivos para quienes confían en nosotros."
+      description: "Prioridad en reservas para quienes ya confían en nosotros."
     }
   ];
 
@@ -80,10 +80,10 @@ const SobreNosotros = () => {
         <div className="container-narrow mx-auto px-4 relative z-10">
           <div className="max-w-xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Cuidamos a tu perro como si fuera nuestro
+              Cuidamos a tu perro con cariño real
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Más de 5 años de experiencia brindando amor, cuidado profesional y atención personalizada a cada mascota que nos confían.
+              Más de 5 años creando un espacio tranquilo donde cada perro se siente cómodo y bien cuidado.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild>
@@ -275,10 +275,10 @@ const SobreNosotros = () => {
       <section className="section-padding bg-primary/5">
         <div className="container-narrow mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            ¿Listo para conocernos?
+            ¿Quieres conocernos?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Agenda una visita o consulta por nuestros servicios. Estaremos felices de conocer a tu peludo.
+            Escríbenos para agendar o consultar. Estaremos felices de conocer a tu perro.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild>

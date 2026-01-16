@@ -4,23 +4,23 @@ import trustImage from "@/assets/trust-section.jpg";
 const features = [
   {
     icon: Heart,
-    title: "Amor por las mascotas",
-    description: "Tratamos a cada mascota como si fuera nuestra. El bienestar animal es nuestra prioridad.",
+    title: "Cariño genuino",
+    description: "Tu perro es tratado con el mismo amor que le damos a los nuestros. Su bienestar es lo primero.",
   },
   {
     icon: Shield,
-    title: "Seguridad garantizada",
-    description: "Instalaciones seguras, supervisión constante y protocolos estrictos de cuidado.",
+    title: "Ambiente seguro",
+    description: "Espacios tranquilos, supervisión constante y cuidado atento en todo momento.",
   },
   {
     icon: Award,
-    title: "Experiencia profesional",
-    description: "Equipo capacitado con años de experiencia en cuidado y estética canina.",
+    title: "Experiencia real",
+    description: "Años trabajando con perros de todas las razas y temperamentos. Sabemos cómo tratarlos.",
   },
   {
     icon: Users,
     title: "Trato personalizado",
-    description: "Conocemos a cada mascota por su nombre y adaptamos el servicio a sus necesidades.",
+    description: "Conocemos a cada perro por su nombre. Adaptamos el servicio a lo que cada uno necesita.",
   },
 ];
 
@@ -52,12 +52,11 @@ const TrustSection = () => {
               Por qué elegirnos
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
-              Tu mascota en las mejores manos
+              Un lugar donde tu perro está cómodo
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              En Bark in Style entendemos que dejar a tu mascota al cuidado de alguien más requiere 
-              confianza. Por eso nos esforzamos cada día en ofrecer un servicio excepcional, 
-              con amor genuino y profesionalismo.
+              Sabemos que confiar a tu perro no es fácil. Por eso creamos un espacio 
+              tranquilo, con atención real y donde cada mascota se siente en casa.
             </p>
 
             {/* Features Grid */}

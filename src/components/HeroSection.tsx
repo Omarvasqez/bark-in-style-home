@@ -25,14 +25,14 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-            Tu mascota merece{" "}
-            <span className="text-secondary">el mejor cuidado</span>
+            Cuidado canino{" "}
+            <span className="text-secondary">tranquilo y real</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-primary-foreground/85 mb-8 leading-relaxed">
-            Peluquería, hotel y guardería canina con años de experiencia. 
-            Cuidamos a tu mejor amigo como si fuera nuestro.
+            Peluquería, hotel y guardería donde tu perro se siente cómodo. 
+            Resultados naturales, sin estrés y con mucho cariño.
           </p>
 
           {/* CTA Buttons */}
