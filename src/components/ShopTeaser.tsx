@@ -39,10 +39,10 @@ const ShopTeaser = () => {
             Tienda Online
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
-            Productos recomendados
+            Lo que usamos y recomendamos
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Seleccionamos los mejores productos para el bienestar de tu mascota.
+            Productos probados en nuestros servicios. Si funcionan para nuestros clientes peludos, los compartimos contigo.
           </p>
         </div>
 

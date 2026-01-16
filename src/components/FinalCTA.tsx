@@ -12,11 +12,11 @@ const FinalCTA = () => {
 
         {/* Content */}
         <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-          Dale a tu mascota el cuidado que merece
+          Tu perro en buenas manos
         </h2>
         <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-          Agenda tu cita hoy y descubre por qué más de 200 familias confían en Bark in Style 
-          para el cuidado de sus mascotas.
+          Agenda tu cita y conoce un espacio donde tu perro se siente cómodo, 
+          tranquilo y bien cuidado.
         </p>
 
         {/* CTA Buttons */}
