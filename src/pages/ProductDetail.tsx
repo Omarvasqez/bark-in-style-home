@@ -203,10 +203,31 @@ const ProductDetail = () => {
                                 [variant.name]: value,
                               }))
                             }
-                            className={`px-4 py-2 rounded-lg border-2 text-sm font-medium transition-all ${
+                            className={`px-4 py-2 rounded-lg border-2 text-sm font-medium transition-all duration-200 transform ${
                               selectedVariants[variant.name] === value
-                                ? "border-primary bg-primary/10 text-primary"
-                                : "border-border hover:border-primary/50"
+                                ? "border-primary bg-primary/10 text-primary scale-105 shadow-md"
+                                : "border-border hover:border-primary/50 hover:scale-102 active:scale-95"
+                            }`}
+                          >
+                            {value}
+                          </button>
+                        ))}
+                      </div>
+                    ) : variant.name === "Talla" ? (
+                      <div className="flex flex-wrap gap-2">
+                        {variant.values.map((value) => (
+                          <button
+                            key={value}
+                            onClick={() =>
+                              setSelectedVariants((prev) => ({
+                                ...prev,
+                                [variant.name]: value,
+                              }))
+                            }
+                            className={`w-12 h-12 rounded-lg border-2 text-sm font-bold transition-all duration-200 transform ${
+                              selectedVariants[variant.name] === value
+                                ? "border-primary bg-primary text-primary-foreground scale-105 shadow-md"
+                                : "border-border hover:border-primary/50 hover:bg-muted active:scale-95"
                             }`}
                           >
                             {value}

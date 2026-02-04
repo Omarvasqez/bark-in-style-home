@@ -103,14 +103,23 @@ const Checkout = () => {
   };
 
   const handlePlaceOrder = () => {
-    toast({
-      title: "¡Pedido recibido!",
-      description: "Te enviaremos un email con los detalles de tu compra.",
+    const orderNumber = `BIS${Date.now().toString(36).toUpperCase()}`;
+    
+    navigate("/confirmacion", {
+      state: {
+        items: [...items],
+        shippingInfo,
+        paymentMethod,
+        subtotal,
+        discountAmount,
+        shippingCost,
+        total,
+        orderNumber,
+      },
     });
-    setStep("confirmation");
   };
 
-  if (items.length === 0 && step !== "confirmation") {
+  if (items.length === 0) {
     return (
       <div className="min-h-screen bg-background">
         <Header />
@@ -119,99 +128,6 @@ const Checkout = () => {
           <Link to="/tienda">
             <Button>Ir a la tienda</Button>
           </Link>
-        </div>
-        <Footer />
-      </div>
-    );
-  }
-
-  // Confirmation screen
-  if (step === "confirmation") {
-    return (
-      <div className="min-h-screen bg-background">
-        <Header />
-        <div className="container mx-auto px-4 py-12 md:py-20">
-          <div className="max-w-lg mx-auto text-center">
-            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Check className="w-10 h-10 text-primary" />
-            </div>
-            <h1 className="text-2xl md:text-3xl font-bold mb-4">
-              ¡Gracias por tu pedido!
-            </h1>
-            <p className="text-muted-foreground mb-6">
-              Hemos recibido tu pedido y te enviaremos un email a{" "}
-              <strong>{shippingInfo.email}</strong> con los detalles y las instrucciones
-              de pago.
-            </p>
-
-            <div className="bg-card rounded-xl border p-6 text-left mb-6">
-              <h2 className="font-semibold mb-4">Resumen de tu pedido</h2>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Total a pagar:</span>
-                  <span className="font-bold text-primary">{formatPrice(total)}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Método de pago:</span>
-                  <span>
-                    {paymentMethod === "transfer"
-                      ? "Transferencia"
-                      : paymentMethod === "webpay"
-                      ? "Webpay"
-                      : "Tarjeta en local"}
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Envío a:</span>
-                  <span className="text-right">
-                    {shippingInfo.address}, {shippingInfo.city}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {paymentMethod === "transfer" && (
-              <div className="bg-secondary/50 rounded-xl p-6 text-left mb-6">
-                <h3 className="font-semibold mb-3 flex items-center gap-2">
-                  <Building2 className="w-4 h-4 text-primary" />
-                  Datos para transferencia
-                </h3>
-                <div className="space-y-1 text-sm">
-                  <p><strong>Banco:</strong> Banco Estado</p>
-                  <p><strong>Tipo:</strong> Cuenta Vista</p>
-                  <p><strong>RUT:</strong> 12.345.678-9</p>
-                  <p><strong>Nombre:</strong> Bark in Style SpA</p>
-                  <p><strong>Email:</strong> pagos@barkinstyle.cl</p>
-                  <p className="text-muted-foreground mt-2">
-                    Envía el comprobante por WhatsApp para confirmar tu pedido.
-                  </p>
-                </div>
-              </div>
-            )}
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link to="/tienda" className="flex-1">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="w-full"
-                  onClick={() => clearCart()}
-                >
-                  Seguir comprando
-                </Button>
-              </Link>
-              <a
-                href="https://wa.me/56912345678?text=Hola!%20Acabo%20de%20hacer%20un%20pedido%20en%20la%20tienda"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1"
-              >
-                <Button size="lg" className="w-full">
-                  Contactar por WhatsApp
-                </Button>
-              </a>
-            </div>
-          </div>
         </div>
         <Footer />
       </div>
