@@ -5,40 +5,40 @@ import { Button } from "@/components/ui/button";
 
 const reviews = [
   {
-    name: "Carolina M.",
-    text: "Excelente atención y mi perrito quedó hermoso. Se nota el cariño con que trabajan.",
+    name: "Omar Vásquez",
+    text: "Trataron a mi perrita como si fueran de ellos. Son excelentes personas y su servicio es increíble. Totalmente recomendados. Tienen a los perritos libres y tienen accesorios de lo más bonitos.",
     rating: 5,
-    timeAgo: "hace 2 semanas",
+    timeAgo: "hace 2 años",
   },
   {
-    name: "Felipe R.",
-    text: "Dejé a mi mascota en el hotel por una semana y me mandaban fotos todos los días. Total tranquilidad.",
+    name: "Patricia Vásquez",
+    text: "Quiero agradecerles por cuidar muy bien a mi bebé. Fueron 8 días que siempre me mandaron videos para verlo, fue muy querido y regaloneado. Los recomiendo 100%. ¡Muchas gracias!",
     rating: 5,
-    timeAgo: "hace 1 mes",
+    timeAgo: "hace 4 meses",
   },
   {
-    name: "Andrea P.",
-    text: "La guardería es espectacular. Mi cachorro llega feliz y cansado. Muy recomendado.",
-    rating: 5,
-    timeAgo: "hace 3 semanas",
-  },
-  {
-    name: "Javiera S.",
-    text: "Siempre dejo a mi golden aquí. El trato es increíble y los cortes quedan perfectos.",
+    name: "Martin Traviesa",
+    text: "El mejor hotel de perros de Concón por lejos. 100% recomendado, cuidan a tu perro como si fuese un hijo.",
     rating: 5,
     timeAgo: "hace 2 meses",
   },
   {
-    name: "Tomás L.",
-    text: "Mi perro es muy nervioso y aquí lo tratan con mucha paciencia. Totalmente recomendado.",
+    name: "Teresita Correa",
+    text: "Excelente lugar. Las que trabajan ahí son un amor, se nota que cuidan a los perros como si fuesen suyos y tienen muy buen trato. La peluquería tiene excelente maquinaria. Lo recomiendo a ojos cerrados.",
     rating: 5,
-    timeAgo: "hace 1 mes",
+    timeAgo: "hace 3 años",
   },
   {
-    name: "Constanza V.",
-    text: "El hospedaje es de primera. Me enviaron videos de mi perrita jugando todo el día. Volveremos siempre.",
+    name: "Tabatha C.",
+    text: "Mis perritas tienen 18 y 15 años y tienen sensibilidad en la piel. Este es el único lugar que confío para lavar y cortar su pelo. Las chicas son muy amorosas y cada vez salen felices de todo lo que juegan.",
     rating: 5,
-    timeAgo: "hace 3 meses",
+    timeAgo: "hace 1 año",
+  },
+  {
+    name: "Catherina Rivano",
+    text: "Son los mejores en el cuidado de mascotas en la guardería. Mi perrita fue feliz asistiendo, y siempre la cuidaron y recibieron con mucho cariño.",
+    rating: 5,
+    timeAgo: "hace 1 año",
   },
 ];
 
