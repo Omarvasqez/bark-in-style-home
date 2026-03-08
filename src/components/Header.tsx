@@ -8,10 +8,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Peluquería", href: "/#servicios" },
-    { label: "Hospedaje", href: "/hospedaje" },
-    { label: "Tienda", href: "/tienda" },
-    { label: "Nosotros", href: "/sobre-nosotros" },
+    { label: "Peluquería", href: "https://citas.barkinstyle.cl", external: true },
+    { label: "Hospedaje", href: "/hospedaje", external: false },
+    { label: "Tienda", href: "/tienda", external: false },
+    { label: "Nosotros", href: "/sobre-nosotros", external: false },
   ];
 
   return (
