@@ -8,10 +8,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Peluquería", href: "/#servicios" },
-    { label: "Hospedaje", href: "/hospedaje" },
-    { label: "Tienda", href: "/tienda" },
-    { label: "Nosotros", href: "/sobre-nosotros" },
+    { label: "Peluquería", href: "https://citas.barkinstyle.cl", external: true },
+    { label: "Hospedaje", href: "/hospedaje", external: false },
+    { label: "Tienda", href: "/tienda", external: false },
+    { label: "Nosotros", href: "/sobre-nosotros", external: false },
   ];
 
   return (
@@ -25,11 +25,12 @@ const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav aria-label="Navegación principal" role="navigation" className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="text-muted-foreground hover:text-primary transition-colors font-medium"
               >
                 {link.label}
@@ -41,7 +42,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-4">
             <CartIcon />
             <Button asChild>
-              <a href="#reservar">Reservar</a>
+              <a href="https://citas.barkinstyle.cl" target="_blank" rel="noopener noreferrer">Reservar</a>
             </Button>
           </div>
 
@@ -60,12 +61,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-border/50 animate-fade-up">
+          <nav aria-label="Navegación principal móvil" role="navigation" className="md:hidden py-4 border-t border-border/50 animate-fade-up">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
+                  {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   className="text-muted-foreground hover:text-primary transition-colors font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -73,7 +75,7 @@ const Header = () => {
                 </a>
               ))}
               <Button asChild className="mt-2">
-                <a href="#reservar">Reservar</a>
+                <a href="https://citas.barkinstyle.cl" target="_blank" rel="noopener noreferrer">Reservar</a>
               </Button>
             </div>
           </nav>
