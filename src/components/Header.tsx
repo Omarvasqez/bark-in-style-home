@@ -42,7 +42,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-4">
             <CartIcon />
             <Button asChild>
-              <a href="#reservar">Reservar</a>
+              <a href="https://citas.barkinstyle.cl" target="_blank" rel="noopener noreferrer">Reservar</a>
             </Button>
           </div>
 
